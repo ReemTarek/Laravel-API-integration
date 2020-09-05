@@ -60,44 +60,44 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 ## How this application works
-first requirment:
-- PHP 7.4.*
-you can download XAMPP package from here (windows) https://www.apachefriends.org/xampp-files/7.4.9/xampp-windows-x64-7.4.9-0-VC15-installer.exe 
-this package have mysql, apache server
-- composer 
-follow the steps of this link to install composer https://getcomposer.org/download/
-this application is developed with Laravel 7
-in order to run the application first make sure to have XAMPP package,
-then download the code 
-on the folder where the files of the code exists open command prompt and type command 'composer install' to install the vendor and needed libraries for the application
-then run 'npm install'
-after that make sure the apache server and mysql are working by checking them from XAMPP control panel
-then go to 'localhost/phpmyadmin' and create a database named: mytask
-after that you have a .env file you should adjust the following lines to:
+first requirment:<br>
+- PHP 7.4.*<br>
+you can download XAMPP package from here (windows) https://www.apachefriends.org/xampp-files/7.4.9/xampp-windows-x64-7.4.9-0-VC15-installer.exe <br>
+this package have mysql, apache server <br>
+- composer <br> 
+follow the steps of this link to install composer https://getcomposer.org/download/ <br>
+this application is developed with Laravel 7 <br>
+in order to run the application first make sure to have XAMPP package, <br>
+then download the code <br>
+on the folder where the files of the code exists open command prompt and type command 'composer install' to install the vendor and needed libraries for the application <br>
+then run 'npm install' <br>
+after that make sure the apache server and mysql are working by checking them from XAMPP control panel <br>
+then go to 'localhost/phpmyadmin' and create a database named: mytask <br>
+after that you have a .env file you should adjust the following lines to: <br>
+<br> 
+DB_CONNECTION=mysql <br>
+DB_HOST=127.0.0.1 <br>
+DB_PORT=3306 <br>
+DB_DATABASE=mytask <br>
+DB_USERNAME=root <br>
+DB_PASSWORD= <br>
+and then add the following lines to make the APIs work: <br>
+ <br>
+FACEBOOK_APP_ID=602033330479628 <br>
+FACEBOOK_APP_SECRET=08450f79291d56ba8d3bd0d6c5bcbb28 <br>
+FACEBOOK_REDIRECT=https://localhost:8000/callback <br>
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=mytask
-DB_USERNAME=root
-DB_PASSWORD=
-and then add the following lines to make the APIs work:
+PAYPAL_MODE=sandbox <br>
+PAYPAL_SANDBOX_API_USERNAME=sb-w7e47l3119876_api1.business.example.com <br>
+PAYPAL_SANDBOX_API_PASSWORD=WJUQ2VZCXSXBUQCP <br>
+PAYPAL_SANDBOX_API_SECRET=AWyAc-uIVyF1rAxdaRPAKluyiDKSAYkAxLFjZEs4d7ZR4UtkXOAdOP1A <br>
+PAYPAL_CURRENCY=USD <br>
+PAYPAL_SANDBOX_API_CERTIFICATE= <br>
+after that open the command prompt again and type <br>
+php artisan migrate <br>
 
-FACEBOOK_APP_ID=602033330479628
-FACEBOOK_APP_SECRET=08450f79291d56ba8d3bd0d6c5bcbb28
-FACEBOOK_REDIRECT=https://localhost:8000/callback
-
-PAYPAL_MODE=sandbox
-PAYPAL_SANDBOX_API_USERNAME=sb-w7e47l3119876_api1.business.example.com
-PAYPAL_SANDBOX_API_PASSWORD=WJUQ2VZCXSXBUQCP
-PAYPAL_SANDBOX_API_SECRET=AWyAc-uIVyF1rAxdaRPAKluyiDKSAYkAxLFjZEs4d7ZR4UtkXOAdOP1A
-PAYPAL_CURRENCY=USD
-PAYPAL_SANDBOX_API_CERTIFICATE=
-after that open the command prompt again and type 
-php artisan migrate
-
-here the tables should be created 
-after all the application is ready so type in command 'php artisan serve'
-it will show you a link http://localhost:8000
-you can use the application now
-if any error happened contact me with reemtarekmatr97@gmail.com
+here the tables should be created <br>
+after all the application is ready so type in command 'php artisan serve' <br>
+it will show you a link http://localhost:8000 <br>
+you can use the application now <br>
+if any error happened contact me with reemtarekmatr97@gmail.com <br>
